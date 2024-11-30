@@ -15,6 +15,8 @@ class CardOrderTest {
 
     @Test
     void shouldSubmitFormSuccessfully() {
+        open("http://localhost:9999");
+
         $("[data-test-id=name] input").setValue("Иван Иванов");
         $("[data-test-id=phone] input").setValue("+79012345678");
         $("[data-test-id=agreement]").click();
